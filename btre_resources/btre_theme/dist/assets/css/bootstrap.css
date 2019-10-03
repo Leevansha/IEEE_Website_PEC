@@ -445,6 +445,34 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
+.r10home {
+  width: 100%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;}
+  @media only screen and (max-width: 600px) {
+    .r10home {
+      flex-direction: column;
+      
+    }
+    .r10homepart1 {
+      width: 100% !important;
+    }
+    .r10homepart2 {
+      width: 100% !important;
+      padding: 0 30px;
+    }
+    .r10background {
+      height: 300px !important;
+    }
+  }
+  .r10background {
+    height: 560px;
+  }
+  @media (min-width: 1200px) {
+    .r10home {
+      max-width: 1140px; } }
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -463,7 +491,20 @@ pre {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
+  
+.r10homepart1 {
+  width: 60%;
+  /* height: auto; */
+  margin-right: 40px;
+  flex: 1;
 
+}  
+.r10homepart2 {
+  width: 40%;
+  padding-top: 33px;
+  
+  
+} 
 .container-fluid {
   width: 100%;
   padding-right: 15px;
