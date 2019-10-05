@@ -155,18 +155,18 @@
 
         <!-- Work -->
         <section id="work"  style="padding-top:10%">
-            <div class="container bg-dark text-white text-center" >
+            <div class="container bg-dark text-white text-center" style="padding: 3% 0">
                 
             <h2 class="display-4">We Work For You</h2>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!
             </h4>
             <hr>
-            <a href="R10Events.html" class="btn btn-secondary text-white btn-lg">View Our EVENTS</a>
+            <a href="R10Events.html" class="btn btn-secondary text-white btn-lg">R10 Events</a>
             </div>
         </section>
 
         <!-- Team -->
-        <section id="team"  style="padding-top:10%">
+        <section id="team"  style="padding-top:1%">
             <div  class="container">
             
                 <h2 class="text-center">Our Team</h2>
@@ -258,8 +258,11 @@ $(function () {
         $("a[href^=\\#]").click(function (e) {
              e.preventDefault();
              var dest = $(this).attr('href');
+             var curr = $(this);
+             curr.parent().addClass("active").siblings().removeClass('active');
            //   console.log($(dest)[0].clientHeight,$('.text-wr')[0].scrollHeight,$('#menu').outerHeight()); 
               $('html,body').animate({ scrollTop: $(dest).offset().top-scrollPos}, 'slow'); })
+
             });
         })
             </script>
