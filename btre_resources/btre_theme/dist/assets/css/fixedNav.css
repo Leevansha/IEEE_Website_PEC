@@ -16,6 +16,9 @@ h1, p {
 
 .text-wr {
 	position: absolute;
+	width: 100%;
+	justify-content: center;
+	display: flex;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -74,9 +77,9 @@ h1 {
 }
 
 .navfixed nav li a{
-	padding: 7px 20px;
+	padding: 7px 3px 7px 3px;
 	border-radius: 7px;
-	margin-right: 10px;
+	margin-right: 5px;
 	background: rgba(255, 255, 255, 0.5);
 	-webkit-transition: all 0.2s ease-out;
 	-moz-transition: all 0.2s ease-out;
@@ -93,6 +96,18 @@ h1 {
 .navfixed nav li {
 	display: inline-block;
 	list-style: none;
+}
+@media only screen and (max-width: 600px) {
+    .text-wr {
+       display: none;  
+	}
+      
+}
+@media only screen and (max-width: 1024px) {
+    .navfixed nav {
+       margin-top: 40px !important;  
+	}
+      
 }
 
 .navfixed nav li.active a{

@@ -473,6 +473,18 @@ pre {
     .r10home {
       max-width: 1140px; } }
 
+@media only screen and (max-width: 400px) {
+      .nav-item {
+           width: 25%; 
+      }
+      .nav-link {
+        font-size: 15px;
+        padding: 0.5rem 0 !important;
+      }
+          
+}
+
+
 .container {
   width: 100%;
   padding-right: 15px;
