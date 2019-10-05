@@ -1,10 +1,11 @@
 
-.section {
+#aboutUsMenu {
 	min-height: 800px;
 	position: relative;
 	text-align: center;
 	font-family: sans-serif, arial;
 	margin: 0;
+	z-index: 2;
 }
 
 h1, p {
@@ -63,9 +64,13 @@ h1 {
 	opacity: 0.8;
 }
 
-.navfixed {
+.navfixed nav{
 	margin-top: 90px;
 	padding-bottom: 50px;
+}
+
+.navfixed{
+	top:8%;
 }
 
 .navfixed nav li a{
@@ -82,13 +87,12 @@ h1 {
 	color: black;
 	font-family: sans-serif, arial;
 	font-weight: 100;
-	background-color: #ebf5ee;
+	background-color: white;
 }
 
 .navfixed nav li {
 	display: inline-block;
 	list-style: none;
-	
 }
 
 .navfixed nav li.active a{
