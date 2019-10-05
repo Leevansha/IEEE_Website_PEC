@@ -4,7 +4,8 @@
   "description": "Theme for real estate website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/assets/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/assets/css/ --recursive",
+    "start": "webpack-dev-server --hot"
   },
   "author": "Brad Traversy",
   "license": "MIT",

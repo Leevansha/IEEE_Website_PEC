@@ -1,0 +1,12 @@
+#team .card-img-top {
+    width: 100%;
+    height: 18vw;
+    object-fit: cover;
+    object-position: 0% 0%;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+  }
