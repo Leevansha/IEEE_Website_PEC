@@ -91,7 +91,7 @@
         </div>
 
 
-        <section id="showcase-inner"  style="margin-top:10%" >
+        <section id="showcase-inner"  style="padding-top:10%" >
                 <div  class="container">
                 <div class="row text-center py-5 text-white">
                     <div class="col-md-12">
@@ -104,7 +104,7 @@
             </div>
         </section>
 
-        <section id="about"  style="margin-top:10%">
+        <section id="about"  style="padding-top:10%">
                 <div   class="container">
                 <div class="row">
                     <div class="col-md-8">
@@ -154,7 +154,7 @@
         </section>
 
         <!-- Work -->
-        <section id="work"  style="margin-top:10%">
+        <section id="work"  style="padding-top:10%">
             <div class="container bg-dark text-white text-center" >
                 
             <h2 class="display-4">We Work For You</h2>
@@ -166,7 +166,7 @@
         </section>
 
         <!-- Team -->
-        <section id="team"  style="margin-top:10%">
+        <section id="team"  style="padding-top:10%">
             <div  class="container">
             
                 <h2 class="text-center">Our Team</h2>
@@ -231,12 +231,13 @@ $(function () {
 });
 
 function onScroll(event){
-    var scrollPos = $(document).scrollTop()+$('.navfixed').outerHeight()+$('#menu').outerHeight();
+    var scrollPos = $(document).scrollTop()+$('#menu').outerHeight();//+$('.navfixed').outerHeight()+$('#menu').outerHeight();
     $('a[href^=\\#]').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            console.log("hello",refElement,currLink);
+        console.log("hello1",refElement,currLink,scrollPos);
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() >= scrollPos) {
+           console.log("hello",refElement,currLink,scrollPos);
             currLink.parent().addClass("active").siblings().removeClass('active');
         }
         // else{
@@ -251,13 +252,13 @@ $(document).ready(function(){
 
 $(function () {
   
-    var scrollPos = $(document).scrollTop()+$('.navfixed').outerHeight()+$('#menu').outerHeight();
+    var scrollPos = $('.text-wr')[0].clientHeight-15;
     $(function () {
 
         $("a[href^=\\#]").click(function (e) {
              e.preventDefault();
              var dest = $(this).attr('href');
-              console.log(dest); 
+           //   console.log($(dest)[0].clientHeight,$('.text-wr')[0].scrollHeight,$('#menu').outerHeight()); 
               $('html,body').animate({ scrollTop: $(dest).offset().top-scrollPos}, 'slow'); })
             });
         })
