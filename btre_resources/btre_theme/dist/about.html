@@ -43,7 +43,7 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item mr-3 dropdown">
-                        <a class="nav-link" href="R10Events.html">IEEE Region 10 Events</a>
+                        <a class="nav-link" href="R10Events.html">IEEE Region 10</a>
                     </li>
                     <li class="nav-item mr-3 dropdown">
                         <a href="workshop.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
@@ -82,7 +82,7 @@
 
 
     <section id="aboutUsMenu">
-        <div class="container">
+        <!-- <div class="container">
 
             <div class="navfixed fixed-top">
                 <nav class="text-wr">
@@ -92,7 +92,7 @@
                     <li><a href="#team">Our Team</a></li>
                 </nav>
             </div>
-        </div>
+        </div> -->
 
 
         <section id="showcase-inner"  style="padding-top:10%" >
@@ -369,45 +369,45 @@
     </script>
 
     <script>
-$(function () {
-    $(document).on("scroll", onScroll);
-});
+// $(function () {
+//     $(document).on("scroll", onScroll);
+// });
 
-function onScroll(event){
-    var scrollPos = $(document).scrollTop()+$('#menu').outerHeight();//+$('.navfixed').outerHeight()+$('#menu').outerHeight();
-    $('a[href^=\\#]').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        console.log("hello1",refElement,currLink,scrollPos);
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() >= scrollPos) {
-           console.log("hello",refElement,currLink,scrollPos);
-            currLink.parent().addClass("active").siblings().removeClass('active');
-        }
-        // else{
-        //     currLink.parent().removeClass("active");
-        // }
-    });
-}
+// function onScroll(event){
+//     var scrollPos = $(document).scrollTop()+$('#menu').outerHeight();//+$('.navfixed').outerHeight()+$('#menu').outerHeight();
+//     $('a[href^=\\#]').each(function () {
+//         var currLink = $(this);
+//         var refElement = $(currLink.attr("href"));
+//         console.log("hello1",refElement,currLink,scrollPos);
+//         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() >= scrollPos) {
+//            console.log("hello",refElement,currLink,scrollPos);
+//             currLink.parent().addClass("active").siblings().removeClass('active');
+//         }
+//         // else{
+//         //     currLink.parent().removeClass("active");
+//         // }
+//     });
+// }
 
-$(document).ready(function(){
-    $(this).scrollTop(0);
-});
+// $(document).ready(function(){
+//     $(this).scrollTop(0);
+// });
 
-$(function () {
+// $(function () {
   
-    var scrollPos = $('.text-wr')[0].clientHeight-15;
-    $(function () {
+//     var scrollPos = $('.text-wr')[0].clientHeight-15;
+//     $(function () {
 
-        $("a[href^=\\#]").click(function (e) {
-             e.preventDefault();
-             var dest = $(this).attr('href');
-             var curr = $(this);
-             curr.parent().addClass("active").siblings().removeClass('active');
-           //   console.log($(dest)[0].clientHeight,$('.text-wr')[0].scrollHeight,$('#menu').outerHeight()); 
-              $('html,body').animate({ scrollTop: $(dest).offset().top-scrollPos}, 'slow'); })
+//         $("a[href^=\\#]").click(function (e) {
+//              e.preventDefault();
+//              var dest = $(this).attr('href');
+//              var curr = $(this);
+//              curr.parent().addClass("active").siblings().removeClass('active');
+//            //   console.log($(dest)[0].clientHeight,$('.text-wr')[0].scrollHeight,$('#menu').outerHeight()); 
+//               $('html,body').animate({ scrollTop: $(dest).offset().top-scrollPos}, 'slow'); })
 
-            });
-        })
+//             });
+//         })
             </script>
             
             </body>
